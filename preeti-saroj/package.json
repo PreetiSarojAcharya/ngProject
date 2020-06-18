@@ -1,0 +1,11 @@
+{
+  "name": "preeti-saroj",
+  "version": "1.0.1",
+  "description": "My first Template to create Angular 9 project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Preeti Saroj Acharya",
+  "license": "MIT"
+}
