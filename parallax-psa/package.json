@@ -1,0 +1,19 @@
+{
+  "name": "parallax-psa",
+  "version": "1.0.0",
+  "description": "My first Template to create Angular 9 project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PreetiSarojAcharya/MyTemplate.git"
+  },
+  "author": "Preeti Saroj Acharya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PreetiSarojAcharya/MyTemplate/issues"
+  },
+  "homepage": "https://github.com/PreetiSarojAcharya/MyTemplate#readme"
+}
