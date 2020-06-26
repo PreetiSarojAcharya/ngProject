@@ -12,7 +12,7 @@ import { MainimageComponent } from './layouts/mainimage/mainimage.component';
 
 const appRoutes: Routes = [
   { path: 'born', component: FirstlinkComponent },
-  { path: 'anaprasan', component: SecondlinkComponent },
+  { path: 'annaprasan', component: SecondlinkComponent },
   { path: 'birthday', component: ThirdlinkComponent },
 ];
 
