@@ -1,3 +1,4 @@
+import { FirstlinkComponent } from './../layouts/firstlink/firstlink.component';
 import { BornThirdComponent } from './../firstlink/parent-born/born-third/born-third.component';
 import { BornSecondComponent } from './../firstlink/parent-born/born-second/born-second.component';
 import { NgModule } from '@angular/core';
@@ -12,9 +13,9 @@ import { ParentBornComponent } from '../firstlink/parent-born/parent-born.compon
 const appRoutes: Routes = [
   {
     path: 'born',
-    component: BornNavComponent,
+    component: ParentBornComponent,
     children: [
-      { path: '', component: ParentBornComponent },
+      //{ path: '', component: ParentBornComponent },
       {
         path: 'bornfirst',
         component: BornFirstComponent,
