@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './layouts/footer/footer.component';
@@ -11,13 +10,10 @@ import { NavComponent } from './layouts/nav/nav.component';
 import { MainimageComponent } from './layouts/mainimage/mainimage.component';
 import { ParentBornComponent } from './firstlink/parent-born/parent-born.component';
 import { AppRoutingModule } from './modules/app-routing.module';
-//import { BornFirstComponent } from './firstlink/parentBorn/born-first/born-first.component';
-
-const appRoutes: Routes = [
-  { path: 'born', component: FirstlinkComponent },
-  { path: 'annaprasan', component: SecondlinkComponent },
-  { path: 'birthday', component: ThirdlinkComponent },
-];
+import { BornFirstComponent } from './firstlink/parent-born/born-first/born-first.component';
+import { BornSecondComponent } from './firstlink/parent-born/born-second/born-second.component';
+import { BornThirdComponent } from './firstlink/parent-born/born-third/born-third.component';
+import { BornNavComponent } from './firstlink/parent-born/born-nav/born-nav.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +25,10 @@ const appRoutes: Routes = [
     NavComponent,
     MainimageComponent,
     ParentBornComponent,
-    //  BornFirstComponent,
+    BornFirstComponent,
+    BornSecondComponent,
+    BornThirdComponent,
+    BornNavComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

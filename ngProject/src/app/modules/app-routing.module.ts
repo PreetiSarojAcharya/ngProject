@@ -1,12 +1,38 @@
+import { BornThirdComponent } from './../firstlink/parent-born/born-third/born-third.component';
+import { BornSecondComponent } from './../firstlink/parent-born/born-second/born-second.component';
+import { FirstlinkComponent } from './../layouts/firstlink/firstlink.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { FirstlinkComponent } from '../layouts/firstlink/firstlink.component';
+//import { FirstlinkComponent } from '../layouts/firstlink/firstlink.component';
 import { SecondlinkComponent } from '../layouts/secondlink/secondlink.component';
 import { ThirdlinkComponent } from '../layouts/thirdlink/thirdlink.component';
+import { BornNavComponent } from '../firstlink/parent-born/born-nav/born-nav.component';
+import { BornFirstComponent } from '../firstlink/parent-born/born-first/born-first.component';
 
 const appRoutes: Routes = [
-  { path: 'born', component: FirstlinkComponent },
+  {
+    path: 'born',
+    component: BornNavComponent,
+    children: [
+      { path: '', component: FirstlinkComponent },
+      {
+        path: 'bornfirst',
+        component: BornFirstComponent,
+      },
+
+      {
+        path: 'bornsecond',
+        component: BornSecondComponent,
+      },
+
+      {
+        path: 'bornthird',
+        component: BornThirdComponent,
+      },
+    ],
+  },
+
   { path: 'annaprasan', component: SecondlinkComponent },
   { path: 'birthday', component: ThirdlinkComponent },
 ];
