@@ -9,6 +9,9 @@ import { SecondlinkComponent } from './layouts/secondlink/secondlink.component';
 import { FirstlinkComponent } from './layouts/firstlink/firstlink.component';
 import { NavComponent } from './layouts/nav/nav.component';
 import { MainimageComponent } from './layouts/mainimage/mainimage.component';
+import { ParentBornComponent } from './firstlink/parent-born/parent-born.component';
+import { AppRoutingModule } from './modules/app-routing.module';
+//import { BornFirstComponent } from './firstlink/parentBorn/born-first/born-first.component';
 
 const appRoutes: Routes = [
   { path: 'born', component: FirstlinkComponent },
@@ -25,8 +28,10 @@ const appRoutes: Routes = [
     FirstlinkComponent,
     NavComponent,
     MainimageComponent,
+    ParentBornComponent,
+    //  BornFirstComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
