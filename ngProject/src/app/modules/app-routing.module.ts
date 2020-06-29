@@ -1,4 +1,3 @@
-import { FirstlinkComponent } from './../layouts/firstlink/firstlink.component';
 import { BornThirdComponent } from './../firstlink/parent-born/born-third/born-third.component';
 import { BornSecondComponent } from './../firstlink/parent-born/born-second/born-second.component';
 import { NgModule } from '@angular/core';
@@ -6,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { SecondlinkComponent } from '../layouts/secondlink/secondlink.component';
 import { ThirdlinkComponent } from '../layouts/thirdlink/thirdlink.component';
-import { BornNavComponent } from '../firstlink/parent-born/born-nav/born-nav.component';
 import { BornFirstComponent } from '../firstlink/parent-born/born-first/born-first.component';
 import { ParentBornComponent } from '../firstlink/parent-born/parent-born.component';
 
