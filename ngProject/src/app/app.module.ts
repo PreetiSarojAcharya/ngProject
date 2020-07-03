@@ -13,7 +13,7 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { BornFirstComponent } from './firstlink/parent-born/born-first/born-first.component';
 import { BornSecondComponent } from './firstlink/parent-born/born-second/born-second.component';
 import { BornThirdComponent } from './firstlink/parent-born/born-third/born-third.component';
-//import { BornNavComponent } from './firstlink/parent-born/born-nav/born-nav.component';
+import { BornNavComponent } from './firstlink/parent-born/born-nav/born-nav.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { BornThirdComponent } from './firstlink/parent-born/born-third/born-thir
     BornFirstComponent,
     BornSecondComponent,
     BornThirdComponent,
-    // BornNavComponent,
+    BornNavComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -2,19 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-born-third',
-  template: `
-    <p>
-      born-third works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './born-third.component.html',
+  styles: [],
 })
 export class BornThirdComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
