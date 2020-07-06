@@ -3,3 +3,8 @@
   height: 200px;
   background: transparent;
 }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
