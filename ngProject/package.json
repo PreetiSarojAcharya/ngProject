@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
+    "angular-oauth2-oidc": "^10.0.3",
     "mybootstrap4template": "^1.0.0",
     "preeti-saroj": "^1.0.0",
     "rxjs": "~6.5.4",

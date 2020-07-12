@@ -1,3 +1,4 @@
+import { HomeComponent } from './../home/home.component';
 import { BornNavComponent } from './../firstlink/parent-born/born-nav/born-nav.component';
 import { BornThirdComponent } from './../firstlink/parent-born/born-third/born-third.component';
 import { BornSecondComponent } from './../firstlink/parent-born/born-second/born-second.component';
@@ -10,6 +11,8 @@ import { BornFirstComponent } from '../firstlink/parent-born/born-first/born-fir
 import { ParentBornComponent } from '../firstlink/parent-born/parent-born.component';
 
 const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '*', redirectTo: 'home' },
   {
     path: 'born',
     component: BornNavComponent,

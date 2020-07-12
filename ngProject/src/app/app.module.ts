@@ -15,6 +15,10 @@ import { BornSecondComponent } from './firstlink/parent-born/born-second/born-se
 import { BornThirdComponent } from './firstlink/parent-born/born-third/born-third.component';
 import { BornNavComponent } from './firstlink/parent-born/born-nav/born-nav.component';
 
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OAuthModule } from 'angular-oauth2-oidc';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +33,14 @@ import { BornNavComponent } from './firstlink/parent-born/born-nav/born-nav.comp
     BornSecondComponent,
     BornThirdComponent,
     BornNavComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    OAuthModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
